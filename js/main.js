@@ -145,3 +145,14 @@ jQuery(document).ready(function( $ ) {
 // custom code
 
 });
+
+
+
+$(window).load(function(){
+  $("body").css("overflow","auto");
+$(".loading-overlay .sk-cube-grid").fadeOut(2000,function(){
+$(this).parent().fadeOut(2000,function(){
+  $(this).remove();
+})
+});
+});
