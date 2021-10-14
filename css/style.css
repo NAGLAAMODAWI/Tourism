@@ -1,875 +1,880 @@
 /*Home Style*/
 body{
-  padding-top: 70px;
-}
-a:hover{
-  text-decoration: none;
-}
-h1 span{
-  color: violet;
-}
-
- /*main navbar*/
- .navbar-header .navbar-brand img{
-  /*max-width: 200px;*/
-  max-height: 30px;
-  margin-top: -8px;
-}
-@media (min-width: 768px){
-.navbar-right {
-    margin-right: 0; 
-}
-}
-/*Phone Number In NavBar*/
-.navbar-right a i {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 26px;
-  font-weight: bold;
-  color:#2B0463;
-  margin-right: 5px;
-  color: #F47D25;
-}
-
-.navbar-right .glyphicon{
-  top: 0;
-}
-/*Go To Top*/
-
-.sroal {
-  color: #F47D25;
-  position: fixed;
-  display: block;
-  z-index: 9999;
-  right: 5px;
-  bottom: 5px;
-  cursor: pointer;
-  display: none;
-}
-.sroal-whatsapp i {
-  color: #25d366;
-  position: fixed;
-  display: block;
-  z-index: 9999;
-  left: 5px;
-  bottom: 11px;
-  font-size: 33px;
-  cursor: pointer;
-}
-.navbar-default {
-  background-color: white;
-  border-color: white;
-}
-.navbar-default .navbar-nav > li > a {
-  color: violet;
-  padding-top:27px;
-  font-size: 17px;
-
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color:black;
-}
-.navbar-toggle{
-  margin-top: 18px;
-  border-color: violet;
-}
-.navbar-default .navbar-toggle {
-  border-color: violet;
-  background-color: violet;
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background-color:violet ;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: white;
-}
-
-
-/*style of the undelin in the menu*/
-
-.lineUnder::after{
-  content: '';
-  background: violet;
-  display: block;
-  transition: width .3s;
-  width: 0;
-  height: 2px;
-}
-.lineUnder:hover::after{
-  width: 100%;
-  transition: width .3s;
-  
-}
-/*Logo Styly*/
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-  color:violet;
-  background-color: transparent;
-}
-.navbar-brand h5{
-font-size: 20px;
-    font-weight: bold;
-    color: violet
-}
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-  /* padding-bottom: 0px; */
-  margin-bottom: 16px;
-}
-/*end of the undelin in the menu*/
-
-/*color of the navbar and brand*/
-
-
-/* end section style of the nav*/
-
-/*--------------------------------------------------------------
-# Gallery Section
---------------------------------------------------------------*/
-
-#gallery {
-  padding: 60px;
-  overflow: hidden;
-}
-
-  .section-header {
-      margin-bottom: 60px;
-      position: relative;
-      padding-bottom: 20px;
-  }  
-  .section-header h2 {
-      font-size: 36px;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 700;
-      margin-bottom: 10px;
+    padding-top: 70px;
+    overflow: hidden;
   }
-  .section-header p {
-      text-align: center;
-      padding: 0;
-      margin: 0;
-      font-size: 18px;
-      font-weight: 500;
-      color: #9195a2;
+  a:hover{
+    text-decoration: none;
   }
-  .section-header::before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 60px;
-      height: 5px;
-      background: #f82249;
-      bottom: 0;
-      left: calc(50% - 25px);
-    }
-    .section-with-bg {
-      background-color: #f6f7fd;
-    }
-
-#gallery .owl-nav,
-#gallery .owl-dots {
-  margin-top: 25px;
-  text-align: center;
-}
-
-#gallery .owl-item {
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-}
-
-#gallery .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#gallery .owl-dot.active {
-  background-color: violet;
-}
-
-#gallery .gallery-carousel .owl-stage-outer {
-  overflow: visible;
-}
-
-#gallery .gallery-carousel .center {
-  border: 6px solid violet;
-  margin: -10px;
-  box-sizing: content-box;
-  padding: 4px;
-  background: #fff;
-  z-index: 1;
-}
-.owl-carousel .owl-item img{
-  display: block;
-  min-height: 230px;
-  
-}
-.vbox-container img {
-   max-width: 450px;
-  max-height: 450px;
-}
-
-#gallery  button{
-  color:white;
-  background: violet;
-  margin-top: 15px;
-  height: 50px;
-  border: 3px white solid;
-  
-}
-#gallery  button a{
-  color: white;
-}
-#gallery button:hover{
-  background: white;
-  border: 3px solid violet;
-
-}
-/*--------------------------------------------------------------
-#  End Gallery Section
---------------------------------------------------------------*/  
-
-
-
-/*slide show stily*/
-.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  display: block;
-  /*width 100% beacause if the screan become small the image dose not become small*/
-  width: 100%;
-  max-width: 1500px;
-  height: 450px;
-  
-}
-
-.carousel-caption {
-  /*background-color: rgba(116, 112, 112, 0.5);*/
-  margin-bottom: 150px;
-  top: 150px;  
-  height: 170px;  
-}
-.carousel-caption h2{
- margin-top: 10px;
-  
-}
-
-/*class of the Indicator */
-.carousel-indicators{
-  bottom: 1664px;  
-}
-/*indicator active*/
-.carousel-indicators .active {
-  width: 17px;
-  height: 17px;
-  background-color: violet;
- 
-}
-/*indicator  non active*/
-.carousel-indicators li{
-  width: 15px;
-  height: 15px;
-}
-.a, .aaa ,.aaaa{
-  width: 100%;
-  height: 400px;
-}
-.a{
-  background : url("../images/777.jpg" ) no-repeat center center fixed;
-}
-.aaa{
-  background : url("../images/76456.jpg" ) no-repeat center center fixed;
-}
-.aaaa{
-  background : url("../images/111.jpg" ) no-repeat center center fixed;
-}
-.aaaaa{
-  background : url("../images/44.jpg" ) no-repeat center center fixed;
-}
-.aa{
-  background-color:#ee82ee59;
-  height: 400px;
-}
-/*about style*/
-
-
-
-
-/*--------------------------------------------------------------
-# Speakers Section
---------------------------------------------------------------*/
-.section-header::before {
-  background: #ff99e6;
- 
-}
-#speakers {
-  padding: 60px 0 30px 0;
-}
-#speakers h1 span{
-  color: violet;
-}
-#speakers .speaker {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-#speakers .speaker .details {
-  background: violet;
-  position: absolute;
-  left: 0;
-  bottom: -52px;
-  right: 0;
-  text-align: center;
-  
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-#speakers .speaker .details h3 {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-  
-}
-
-#speakers .speaker .details p {
-  color: #fff;
-  font-size: 15px;
-  
-  font-style: italic;
-}
-/*
- .social {
-  height: 30px;
-}
-.social a {
-  color: #fff;
-}
-.social a:hover {
-  color: #cc0099;
-  text-decoration: overline red;
-}*/
-#speakers .speaker:hover .details {
-  bottom: 0px;
-}
-#speakers .section-header .lead {
-    margin-bottom: 40px;
-}
-/*.img-fluid {
-  max-width: 600px;
-  max-height: 300px;
-}*/
-.img-fluid {
-  max-width: 600px;
-  max-height: 300px;
-}
-
-@media (min-width:768px){
-  .navbar-brand a{
-  margin:20px auto;
-  }
-  
-}
-  /* .Testmonials style*/
-.Testmonials{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.Testmonials .lead{
-  line-height: 2em;
-  margin-bottom: 10px;
-}
-.Testmonials span{
-  color: #ff99e6 ;
-  font-weight: 100px;
-}
-.item span a:hover{
-  text-decoration: none;
-}
-
-/* To but the Style of the Indicators */
-.Testmonials .carousel-inner{
-  min-width: height 160px; ;
-}
-.Testmonials .carousel-indicators {
- position: static;
- margin-left: auto;
- width: 100%;
- padding-top: 20px;
-}
-.Testmonials .carousel-indicators li{
- width: 80px;
- height: 80px;
- text-indent: 0px;
- border: 3px solid white;
- border-radius: 50px;
- overflow: hidden;
- margin: 3px;
- -webkit-transition: all  1s ease;
- -moz-transition: all  1s ease;
- -o-transition: all  1s ease;
- transition: all 1s ease;
-}
-.Testmonials .carousel-indicators li.active{
- opacity:1;
- border: 3px solid #cc0099;
- 
-}
-.Testmonials .carousel-indicators li img{
- max-width: 100%;
- min-height: 100%;
- opacity: 0.6;
-}
-
-/*--------------------------------------------------------------
-#   end Gallery Section
---------------------------------------------------------------*/
-
-/* جالات العمل */
-.subscrib{
-  background-color: rgb(238, 236, 236);
-  padding-bottom: 60px;
-  padding-top: 30px;
-}
-.subscrib h1{
-letter-spacing: 2px;
-}
-.subscrib .lead{
-  margin-bottom: 40px;
-}
-.subscrib .form-control{
-  border-radius: 0px;
-  margin-right: -5px;
-  width:300px ;
-}
-.btn-danger {
-  background-color: violet;
-  border-color: #cc0099 ;
-}
-.subscrib .btn{
-  border-radius: 0px;
-}
-.subscrib .form-inline{
-  border-radius: 0px;
-}
-/* end subscrib style */
-
-/* start our team */
-.our_team{
- /* background: url("../images/slide show/ملفNaqa-Nubia-\ ويكيبيديا.jpg")no-repeat center center fixed;*/
-  /*Beacuse if i do zoome (-)the image dont hidden*/
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  
-  }
-  .our_team .team{
-      background: rgb(165 ,159, 159,  7%);
-      min-height: 400px;
-      padding-top: 30px;
-     
-  }
-   .raw{
-      padding-top: 30px;
-      
-  }
-  .our_team h1{
-    margin-bottom: 80px;
-  }
-  .person{
-      margin-bottom: 30px;
-    border-radius: 15px;
-    background-color: #ccc6;
-    padding-bottom: 22px;
-  }
-  .person i{
+  h1 span{
     color: violet;
   }
-  .person img{
-   width: 130px;
-  height: 130px;
-  margin-top: -63px;
-  }
-  .person p{
-      font-size: 16px;
-  }
-  .person .sosial i{
-      color: white ;
-  }
-  /* مجالات العمل */
-
-  /*start contact us style*/
-.contact-us{
- background : url("../images/img4.jpg" ) no-repeat center center fixed;
-  /*Beacuse if i do zoome (-)the image dont hidden*/
-  -webkit-background-size:cover ;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  min-height: 300px;
-  margin-top: 30px;
-  color: white;
-}
-.contact-us h1 span{
-color: violet;
-}
-.contact-us .fields{
-  background: rgba(78, 63, 63, 0.6);
-  min-height: 300px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-.contact-us p{
-  margin-bottom: 40px;
-}
-.contact-us textarea{
-  height: 108px;
-}
-.contact-us input[type="text"],
-.contact-us textarea{
-  background: rgba(78, 63, 63, 0.6);
-  color: white;
-  border: none;
-}
-.contact-us .form-group :hover{
-color: violet;
-}
-
-.btn-block {
-background: violet;
-}
-.btn-block:hover{
-background: violet;
-}
-.btn-primary {
-  border-color: violet;
-}
-/*start footer style*/
-.fotter{
-  background: rgba(14, 13, 13, 0.849);
-}
-.fotter h3{
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  color: violet;
-  }
-  .fotter .three-colum{
-      overflow: hidden;
-  }
-  .fotter .three-colum li{
-     color: white;
-      width: 33.3333%;
-      float: left;
-      padding: 5px;
-  }
-  .fotter li a{
-    color: white;
-  }
   
-  .fotter .social-list{
-      overflow: hidden;
+   /*main navbar*/
+   .navbar-header .navbar-brand img{
+    /*max-width: 200px;*/
+    max-height: 30px;
+    margin-top: -8px;
   }
-  .fotter .social-list li{
-      margin-top: 10px;
-      opacity: 0.7;
-      float: left;
-      margin-right: 7px;
+  @media (min-width: 768px){
+  .navbar-right {
+      margin-right: 0; 
   }
-  .fotter .social-list li:hover{
-      opacity: 1;
   }
-  .media img{
-      width: 50px;
-      height: 68px;
-  }
-   .Arti {
-       color: white;
-       margin: 20px;
-   }
-   .Arti h5{
-       color: white;
-   }
-   .fotter .img-thumbnall {
-      max-width: 100px;
-       max-height: 90px;
-       border: 1px solid #cc0099;
-       background: rgba(116, 112, 112, 0.5);
-  
-   }
-   .imagescallary h4{
-       color: #cc0099;
-  
-   }
-  .copywrite{
-      color: white;
-      background: rgb(8, 8, 8) ;
-      ;
-      height: 50px;
-  
-  }
-  .copywrite h5{
-      padding-top: 20px;
-      font-size: medium;
-     
-  }
-
-  
-
-
-/*End Home Style*/
-/*About in Home page Style */
-#about{
-  margin-top: 28px;
-}
-#about h2 span{
-  color: violet;
-}
-/*About Page Style */
-.about-us{
-    padding: 50px 0; 
-}
-.about-us h1{
+  /*Phone Number In NavBar*/
+  .navbar-right a i {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 26px;
     font-weight: bold;
-}
-.about-us img{
-    max-height: 400px;
-}
-.about-us hr{
-    size: 70px;
+    color:#2B0463;
+    margin-right: 5px;
+    color: #F47D25;
+  }
+  
+  .navbar-right .glyphicon{
+    top: 0;
+  }
+  /*Go To Top*/
+  
+  .sroal {
+    color: #F47D25;
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  .sroal-whatsapp i {
+    color: #25d366;
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    left: 5px;
+    bottom: 11px;
+    font-size: 33px;
+    cursor: pointer;
+  }
+  .navbar-default {
+    background-color: white;
+    border-color: white;
+  }
+  .navbar-default .navbar-nav > li > a {
     color: violet;
-    height: 5px;
-}
-.Goals{
-    margin-bottom: 20px;
-}
-.Goals h1{
-    font-weight: bold;
-}
-.vision h1{
-    font-weight: bold;
-}
-.contact{
-    margin: 30px 0 30px;
-}
-.contact a button{
-    color:white;
-    background: violet ;
-    margin-top: 10px;
-    border: 3px white solid;
-}
-.contact button:hover{
+    padding-top:27px;
+    font-size: 17px;
+  
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color:black;
+  }
+  .navbar-toggle{
+    margin-top: 18px;
+    border-color: violet;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: violet;
+    background-color: violet;
+  }
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color:violet ;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  
+  
+  /*style of the undelin in the menu*/
+  
+  .lineUnder::after{
+    content: '';
     background: violet;
-    border: 3px solid white;
-
-}
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-
-.contactt {
-    padding: 60px 0;
-    color: black;
+    display: block;
+    transition: width .3s;
+    width: 0;
+    height: 2px;
+  }
+  .lineUnder:hover::after{
+    width: 100%;
+    transition: width .3s;
+    
+  }
+  /*Logo Styly*/
+  .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color:violet;
+    background-color: transparent;
+  }
+  .navbar-brand h5{
+  font-size: 20px;
+      font-weight: bold;
+      color: violet
+  }
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    /* padding-bottom: 0px; */
+    margin-bottom: 16px;
+  }
+  /*end of the undelin in the menu*/
+  
+  /*color of the navbar and brand*/
+  
+  
+  /* end section style of the nav*/
+  
+  /*--------------------------------------------------------------
+  # Gallery Section
+  --------------------------------------------------------------*/
+  
+  #gallery {
+    padding: 60px;
+    overflow: hidden;
   }
   
-  #contact .contact-info {
-    margin-bottom: 20px;
+    .section-header {
+        margin-bottom: 60px;
+        position: relative;
+        padding-bottom: 20px;
+    }  
+    .section-header h2 {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .section-header p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #9195a2;
+    }
+    .section-header::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 5px;
+        background: #f82249;
+        bottom: 0;
+        left: calc(50% - 25px);
+      }
+      .section-with-bg {
+        background-color: #f6f7fd;
+      }
+  
+  #gallery .owl-nav,
+  #gallery .owl-dots {
+    margin-top: 25px;
     text-align: center;
   }
   
-  .contactt .contact-info i {
-    font-size: 48px;
+  #gallery .owl-item {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  
+  #gallery .owl-dot {
     display: inline-block;
-    margin-bottom: 10px;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  
+  #gallery .owl-dot.active {
+    background-color: violet;
+  }
+  
+  #gallery .gallery-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  
+  #gallery .gallery-carousel .center {
+    border: 6px solid violet;
+    margin: -10px;
+    box-sizing: content-box;
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+  }
+  .owl-carousel .owl-item img{
+    display: block;
+    min-height: 230px;
+    
+  }
+  .vbox-container img {
+     max-width: 450px;
+    max-height: 450px;
+  }
+  
+  #gallery  button{
+    color:white;
+    background: violet;
+    margin-top: 15px;
+    height: 50px;
+    border: 3px white solid;
+    
+  }
+  #gallery  button a{
+    color: white;
+  }
+  #gallery button:hover{
+    background: white;
+    border: 3px solid violet;
+  
+  }
+  /*--------------------------------------------------------------
+  #  End Gallery Section
+  --------------------------------------------------------------*/  
+  
+  
+  
+  /*slide show stily*/
+  .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    /*width 100% beacause if the screan become small the image dose not become small*/
+    width: 100%;
+    max-width: 1500px;
+    height: 450px;
+    
+  }
+  
+  .carousel-caption {
+    /*background-color: rgba(116, 112, 112, 0.5);*/
+    margin-bottom: 150px;
+    top: 150px;  
+    height: 170px;  
+  }
+  .carousel-caption h2{
+   margin-top: 10px;
+    
+  }
+  
+  /*class of the Indicator */
+  .carousel-indicators{
+    bottom: 1664px;  
+  }
+  /*indicator active*/
+  .carousel-indicators .active {
+    width: 17px;
+    height: 17px;
+    background-color: violet;
    
   }
-  .contactt .contact-info h3 {
-    font-size: 27px;
-    margin-bottom: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
+  /*indicator  non active*/
+  .carousel-indicators li{
+    width: 15px;
+    height: 15px;
+  }
+  
+  /*about style*/
+  /*--------------------------------------------------------------
+  # Speakers Section
+  --------------------------------------------------------------*/
+  .section-header::before {
+    background: #ff99e6;
+   
+  }
+  #speakers {
+    padding: 60px 0 30px 0;
+  }
+  #speakers h1 span{
     color: violet;
   }
-  
-  .contactt .contact-info a:hover {
-    color:violet;
-  }
-  .contactt .contact-address
- {
+  #speakers .speaker {
+    position: relative;
+    overflow: hidden;
     margin-bottom: 30px;
   }
-
-  .contactt .contact-address p{
-    font-size: 20px;
-    font-weight: bold;
+  
+  #speakers .speaker .details {
+    background: violet;
+    position: absolute;
+    left: 0;
+    bottom: -52px;
+    right: 0;
+    text-align: center;
+    
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-  .contactt .contact-address a{
+  
+  #speakers .speaker .details h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    
+  }
+  
+  #speakers .speaker .details p {
+    color: #fff;
+    font-size: 15px;
+    
+    font-style: italic;
+  }
+  /*
+   .social {
+    height: 30px;
+  }
+  .social a {
+    color: #fff;
+  }
+  .social a:hover {
+    color: #cc0099;
+    text-decoration: overline red;
+  }*/
+  #speakers .speaker:hover .details {
+    bottom: 0px;
+  }
+  #speakers .section-header .lead {
+      margin-bottom: 40px;
+  }
+  /*.img-fluid {
+    max-width: 600px;
+    max-height: 300px;
+  }*/
+  .img-fluid {
+    max-width: 600px;
+    max-height: 300px;
+  }
+  
+  @media (min-width:768px){
+    .navbar-brand a{
+    margin:20px auto;
+    }
+    
+  }
+    /* .Testmonials style*/
+  .Testmonials{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .Testmonials .lead{
+    line-height: 2em;
+    margin-bottom: 10px;
+  }
+  .Testmonials span{
+    color: #ff99e6 ;
+    font-weight: 100px;
+  }
+  .item span a:hover{
+    text-decoration: none;
+  }
+  
+  /* To but the Style of the Indicators */
+  .Testmonials .carousel-inner{
+    min-width: height 160px; ;
+  }
+  .Testmonials .carousel-indicators {
+   position: static;
+   margin-left: auto;
+   width: 100%;
+   padding-top: 20px;
+  }
+  .Testmonials .carousel-indicators li{
+   width: 80px;
+   height: 80px;
+   text-indent: 0px;
+   border: 3px solid white;
+   border-radius: 50px;
+   overflow: hidden;
+   margin: 3px;
+   -webkit-transition: all  1s ease;
+   -moz-transition: all  1s ease;
+   -o-transition: all  1s ease;
+   transition: all 1s ease;
+  }
+  .Testmonials .carousel-indicators li.active{
+   opacity:1;
+   border: 3px solid #cc0099;
+   
+  }
+  .Testmonials .carousel-indicators li img{
+   max-width: 100%;
+   min-height: 100%;
+   opacity: 0.6;
+  }
+  
+  /*--------------------------------------------------------------
+  #   end Gallery Section
+  --------------------------------------------------------------*/
+  
+  /* جالات العمل */
+  .subscrib{
+    background-color: rgb(238, 236, 236);
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+  .subscrib h1{
+  letter-spacing: 2px;
+  }
+  .subscrib .lead{
+    margin-bottom: 40px;
+  }
+  .subscrib .form-control{
+    border-radius: 0px;
+    margin-right: -5px;
+    width:300px ;
+  }
+  .btn-danger {
+    background-color: violet;
+    border-color: #cc0099 ;
+  }
+  .subscrib .btn{
+    border-radius: 0px;
+  }
+  .subscrib .form-inline{
+    border-radius: 0px;
+  }
+  /* end subscrib style */
+  
+  /* start our team */
+  .our_team{
+   /* background: url("../images/slide show/ملفNaqa-Nubia-\ ويكيبيديا.jpg")no-repeat center center fixed;*/
+    /*Beacuse if i do zoome (-)the image dont hidden*/
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    
+    }
+    .our_team .team{
+        background: rgb(165 ,159, 159,  7%);
+        min-height: 400px;
+        padding-top: 30px;
+       
+    }
+     .raw{
+        padding-top: 30px;
+        
+    }
+    .our_team h1{
+      margin-bottom: 80px;
+    }
+    .person{
+        margin-bottom: 30px;
+      border-radius: 15px;
+      background-color: #ccc6;
+      padding-bottom: 22px;
+    }
+    .person i{
+      color: violet;
+    }
+    .person img{
+     width: 130px;
+    height: 130px;
+    margin-top: -63px;
+    }
+    .person p{
+        font-size: 16px;
+    }
+    .person .sosial i{
+        color: white ;
+    }
+    /* مجالات العمل */
+  
+    /*start contact us style*/
+  .contact-us{
+   background : url("../images/img4.jpg" ) no-repeat center center fixed;
+    /*Beacuse if i do zoome (-)the image dont hidden*/
+    -webkit-background-size:cover ;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    min-height: 300px;
+    margin-top: 30px;
+    color: white;
+  }
+  .contact-us h1 span{
+  color: violet;
+  }
+  .contact-us .fields{
+    background: rgba(78, 63, 63, 0.6);
+    min-height: 300px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .contact-us p{
+    margin-bottom: 40px;
+  }
+  .contact-us textarea{
+    height: 108px;
+  }
+  .contact-us input[type="text"],
+  .contact-us textarea{
+    background: rgba(78, 63, 63, 0.6);
+    color: white;
+    border: none;
+  }
+  .contact-us .form-group :hover{
+  color: violet;
+  }
+  
+  .btn-block {
+  background: violet;
+  }
+  .btn-block:hover{
+  background: violet;
+  }
+  .btn-primary {
+    border-color: violet;
+  }
+  /*start footer style*/
+  .fotter{
+    background: rgba(14, 13, 13, 0.849);
+  }
+  .fotter h3{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: violet;
+    }
+    .fotter .three-colum{
+        overflow: hidden;
+    }
+    .fotter .three-colum li{
+       color: white;
+        width: 33.3333%;
+        float: left;
+        padding: 5px;
+    }
+    .fotter li a{
+      color: white;
+    }
+    
+    .fotter .social-list{
+        overflow: hidden;
+    }
+    .fotter .social-list li{
+        margin-top: 10px;
+        opacity: 0.7;
+        float: left;
+        margin-right: 7px;
+    }
+    .fotter .social-list li:hover{
+        opacity: 1;
+    }
+    .media img{
+        width: 50px;
+        height: 68px;
+    }
+     .Arti {
+         color: white;
+         margin: 20px;
+     }
+     .Arti h5{
+         color: white;
+     }
+     .fotter .img-thumbnall {
+        max-width: 100px;
+         max-height: 90px;
+         border: 1px solid #cc0099;
+         background: rgba(116, 112, 112, 0.5);
+    
+     }
+     .imagescallary h4{
+         color: #cc0099;
+    
+     }
+    .copywrite{
+        color: white;
+        background: rgb(8, 8, 8) ;
+        ;
+        height: 50px;
+    
+    }
+    .copywrite h5{
+        padding-top: 20px;
+        font-size: medium;
+       
+    }
+  
+    
+  
+  
+  /*End Home Style*/
+  /*About in Home page Style */
+  #about{
+    margin-top: 28px;
+  }
+  #about h2 span{
+    color: violet;
+  }
+  /*About Page Style */
+  .about-us{
+      padding: 50px 0; 
+  }
+  .about-us h1{
+      font-weight: bold;
+  }
+  .about-us img{
+      max-height: 400px;
+  }
+  .about-us hr{
+      size: 70px;
+      color: violet;
+      height: 5px;
+  }
+  .Goals{
+      margin-bottom: 20px;
+  }
+  .Goals h1{
+      font-weight: bold;
+  }
+  .vision h1{
+      font-weight: bold;
+  }
+  .contact{
+      margin: 30px 0 30px;
+  }
+  .contact a button{
+      color:white;
+      background: violet ;
+      margin-top: 10px;
+      border: 3px white solid;
+  }
+  .contact button:hover{
+      background: violet;
+      border: 3px solid white;
+  
+  }
+  /*--------------------------------------------------------------
+  # Contact Section
+  --------------------------------------------------------------*/
+  
+  .contactt {
+      padding: 60px 0;
+      color: black;
+    }
+    
+    #contact .contact-info {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .contactt .contact-info i {
+      font-size: 48px;
+      display: inline-block;
+      margin-bottom: 10px;
+     
+    }
+    .contactt .contact-info h3 {
+      font-size: 27px;
+      margin-bottom: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: violet;
+    }
+    
+    .contactt .contact-info a:hover {
+      color:violet;
+    }
+    .contactt .contact-address
+   {
+      margin-bottom: 30px;
+    }
+  
+    .contactt .contact-address p{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .contactt .contact-address a{
+      color: black;
+    }
+    /*Tourism Aria Page*/
+    .thumbnail {
+      display: block;
+      padding: 4px;
+      margin-bottom: 30px;
+      line-height: 1.42857143;
+      background-color: #FED;
+      border: 1px solid rgb(184, 6, 154);
+     
+  }
+    .container .thumbnail img{
+    max-width: 1000px;
+    max-height: 200px;
+    
+    }
+    /*style of button*/
+    .Tourism-Aria a button{
+      color:white;
+      background: #9966cc;
+     
+      width: 60px;
+      height: 50px;
+      border-radius: 30%;
+      border: 3px violet solid;
+      margin: 20px 0;
+  }
+  .Tourism-Aria button:hover{
+      background: violet;
+      border: 3px solid white;
+  
+  }
+  .thumbnail .caption  h3{
     color: black;
   }
-  /*Tourism Aria Page*/
-  .thumbnail {
-    display: block;
-    padding: 4px;
-    margin-bottom: 30px;
-    line-height: 1.42857143;
-    background-color: #FED;
-    border: 1px solid rgb(184, 6, 154);
-   
-}
-  .container .thumbnail img{
-  max-width: 1000px;
-  max-height: 200px;
+  .thumbnail .caption a:hover{
+    text-decoration: none;
+  }
+  .thumbnail .caption h3:hover,
+  h3:focus {
+    color: violet;
+    
+  }
+  .thumbnail .caption h3:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+  
+  @media (max-width: 991px) and (min-width: 768px){
   
   }
-  /*style of button*/
-  .Tourism-Aria a button{
-    color:white;
-    background: #9966cc;
-   
-    width: 60px;
-    height: 50px;
-    border-radius: 30%;
-    border: 3px violet solid;
-    margin: 20px 0;
-}
-.Tourism-Aria button:hover{
-    background: violet;
-    border: 3px solid white;
-
-}
-.thumbnail .caption  h3{
-  color: black;
-}
-.thumbnail .caption a:hover{
-  text-decoration: none;
-}
-.thumbnail .caption h3:hover,
-h3:focus {
-  color: violet;
   
-}
-.thumbnail .caption h3:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-@media (max-width: 991px) and (min-width: 768px){
-
-}
-
-/*Media Query*/
-
-@media (max-width: 768px) { 
-  .navbar-inverse .navbar-brand{
-          float: left;
-          margin-right: 200px;
-          margin-bottom: 30px;
+  /*Media Query*/
+  
+  @media (max-width: 768px) { 
+    .navbar-inverse .navbar-brand{
+            float: left;
+            margin-right: 200px;
+            margin-bottom: 30px;
+    }
+            .img-fluid {
+               min-width: 600px;
+              
+            }
+    .navbar-toggle {
+        margin-left: auto;
+    }
+  .person{
+    margin-bottom: 93px;
   }
-          .img-fluid {
-             min-width: 600px;
-            
-          }
-  .navbar-toggle {
-      margin-left: auto;
+    .subscrib .form-control{
+        margin:20px auto;
+    }
+    .lineUnder::after{
+      display: none;
+    }
+  /* style media of the navbar in the small screen*/
+  
+    .navbar-inverse .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        
+    }
+    .navbar-right{
+  text-align: center;
+    }
+  
+    #speakers .speaker {
+      margin: 0px 55px 30px 55px;
+    }
   }
-.person{
-  margin-bottom: 93px;
-}
-  .subscrib .form-control{
-      margin:20px auto;
+  @media (max-width: 393px) { 
+    .navbar-inverse .navbar-brand{
+            margin-right: 0px;   
+    }
   }
-/* style media of the navbar in the small screen*/
-
-  .navbar-inverse .navbar-nav > li > a {
-      padding-top: 10px;
-      padding-bottom: 15px;
-      
+  @media (max-width: 405px) {
+  #speakers .speaker .details {
+    bottom: -75px;
   }
-  .navbar-right{
-text-align: center;
   }
-
-  #speakers .speaker {
-    margin: 0px 55px 30px 55px;
+  @media (min-width: 768px) and (max-width: 991px) { 
+    .navbar-inverse .navbar-brand{
+        color: yellow;
   }
-}
-@media (min-width: 768px) and (max-width: 991px) { 
-  .navbar-inverse .navbar-brand{
-      color: yellow;
-}
-}
-@media (min-width: 991px) and (max-width:1200px) { 
-  .navbar-inverse .navbar-brand{
-      color: tomato;
   }
-}
-
-
-
-
-/*@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }*/
-
-.Fillter-Gallary h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.Fillter-Gallary .row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.Fillter-Gallary .row,
-.row > .column {
-  padding: 8px;
-}
-
-
-/* Create three equal columns that floats next to each other */
-.Fillter-Gallary .column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
-}
-
-/* Clear floats after rows */
-.Fillter-Gallary .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.Fillter-Gallary .content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.Fillter-Gallary .show {
-  display: block;
-}
-
-/* Style the buttons */
-.Fillter-Gallary .btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-/* Add a grey background color on mouse-over */
-.Fillter-Gallary .btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background color to the active button */
-.Fillter-Gallary .btn.active {
-  background-color: #666;
-   color: white;
-}
-.Fillter-Gallary img{
-  height: 159px;
-  width: 100%;
-}
+  @media (min-width: 991px) and (max-width:1200px) { 
+    .navbar-inverse .navbar-brand{
+        color: tomato;
+    }
+  }
+  
+  
+  .loading-overlay{
+    background:white ;
+    color: violet;
+    position: absolute;;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+  }
+  
+  .sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 300px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: violet;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    }
+  }
+  
+  /*@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+  @media (min-width: @screen-lg-min) { ... }*/
+  
+  
+  
+  
+  
+  
+  
+  
